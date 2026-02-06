@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css'%}">
+</head>
+<body border ="yellow">
+    <header>
+    <h2>EMployee Management System</h2>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/add/">Add Employee</a>
+
+    </nav>
+    </header>
+    <div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>
